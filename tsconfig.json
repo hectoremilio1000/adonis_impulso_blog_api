@@ -1,0 +1,45 @@
+{
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["@adonisjs/core", "@adonisjs/lucid"],
+    "baseUrl": ".",
+    "allowJs": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "paths": {
+      "#app/*": ["app/*"],
+      "#controllers/*": ["app/controllers/*"],
+      "#exceptions/*": ["app/exceptions/*"],
+      "#models/*": ["app/models/*"],
+      "#mails/*": ["app/mails/*"],
+      "#services/*": ["app/services/*"],
+      "#listeners/*": ["app/listeners/*"],
+      "#events/*": ["app/events/*"],
+      "#middleware/*": ["app/middleware/*"],
+      "#validators/*": ["app/validators/*"],
+      "#providers/*": ["app/providers/*"],
+      "#policies/*": ["app/policies/*"],
+      "#abilities/*": ["app/abilities/*"],
+      "#database/*": ["database/*"],
+      "#tests/*": ["tests/*"],
+      "#start/*": ["./start/*.ts"],
+      "#config/*": ["config/*"],
+      "#contracts/*": ["contracts/*"]
+    }
+  },
+  "include": [
+    "app",
+    "config",
+    "start",
+    "providers",
+    "contracts",
+    "database",
+    "commands",
+    "tests",
+    "**/*.ts"
+  ]
+}
